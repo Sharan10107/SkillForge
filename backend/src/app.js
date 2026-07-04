@@ -11,6 +11,7 @@ const notFound = require('./middlewares/notFound.middleware');
 const routes = require('./routes');
 
 const app = express();
+app.set('trust proxy', 1);
 
 // --- Security & parsing middleware ---
 app.use(helmet());
