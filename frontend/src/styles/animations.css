@@ -1,0 +1,19 @@
+/* Reusable keyframes not tied to a single Tailwind utility, kept
+   separate from tailwind.config.js so hand-written CSS animations
+   (used inside SVG illustrations, etc.) live in one findable place. */
+
+@keyframes spark {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.9; }
+  100% { transform: translate(var(--dx, 12px), var(--dy, -40px)) scale(0.2); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.skeleton {
+  background-image: linear-gradient(90deg, var(--surface-raised) 0px, var(--border) 40px, var(--surface-raised) 80px);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}

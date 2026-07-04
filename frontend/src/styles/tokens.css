@@ -1,0 +1,52 @@
+/*
+  SkillForge design tokens.
+  Signature concept: "the blueprint and the forge" — a workshop where a
+  portfolio is drafted like an engineering blueprint, then given a hot
+  ember accent where the work is "forged." Every color/spacing/shadow
+  decision in the app should trace back to a variable defined here,
+  never a raw hex value in a component.
+*/
+
+:root {
+  /* Light mode — warm drafting-paper base */
+  --bg: #FAF7F2;
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --border: #E7E1D6;
+  --grid-line: rgba(20, 18, 15, 0.045);
+
+  --ink: #14120F;
+  --ink-muted: #6B6560;
+
+  --ember-300: #FFB627;
+  --ember-500: #FF7A30;
+  --ember-600: #E8611C;
+
+  --steel-400: #6D89A3;
+  --steel-500: #3E5C76;
+
+  --success: #4C9F70;
+  --danger: #E5484D;
+}
+
+[data-theme='dark'] {
+  /* Dark mode — forge at night: warm charcoal, never pure black */
+  --bg: #14120F;
+  --surface: #1E1B17;
+  --surface-raised: #24211C;
+  --border: #33302A;
+  --grid-line: rgba(255, 246, 235, 0.045);
+
+  --ink: #F5F1EA;
+  --ink-muted: #A39C90;
+
+  --ember-300: #FFC65C;
+  --ember-500: #FF8A3D;
+  --ember-600: #FF7A30;
+
+  --steel-400: #7C97AF;
+  --steel-500: #4A6C8C;
+
+  --success: #5CB584;
+  --danger: #F0656A;
+}
